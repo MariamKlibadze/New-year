@@ -17,7 +17,7 @@ setInterval(() => {
 
 }, 1000);
 
-let now = new Date(2026,0,1);
+let now = new Date(2026, 0, 1);
 
 const panel = document.getElementById('Happy')
 
@@ -117,6 +117,5 @@ if ((birthday - now) <= 0) {
 else {
     panels[0].style.display = 'flex';
 }
-
 
 
