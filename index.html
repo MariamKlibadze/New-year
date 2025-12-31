@@ -11,87 +11,103 @@
 
 
     <style>
-        body {
+        * {
+            box-sizing: border-box;
+        }
 
-            background-color: antiquewhite;
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("https://images.template.net/114125/free-aesthetic-christmas-background-edit-online.jpg");
             background-size: cover;
-            background: url(https://images.template.net/114125/free-aesthetic-christmas-background-edit-online.jpg);
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px 12px;
+            text-align: center;
+        }
+
+        h2,
+        h3 {
+            margin: 0;
+            animation: Kakucia 3s infinite;
+        }
+
+        h2 {
+            margin-top: 80px;
+            color: rgb(146, 32, 123);
+            font-size: clamp(28px, 6vw, 60px);
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: rgb(0, 0, 0);
+            font-size: clamp(18px, 4.5vw, 34px);
         }
 
         .Counter {
+            width: min(900px, 100%);
             display: flex;
-            flex-direction: row;
-            gap: 10%;
+            flex-wrap: wrap;
             justify-content: center;
-            align-content: center;
-            margin-left: 0px;
-            margin-top: 20px;
-            font-size: large;
+            gap: 16px;
             font-weight: bold;
             color: rgb(31, 27, 34);
-            font-size: xx-large;
+            font-size: clamp(18px, 5vw, 32px);
+            padding: 10px 0;
         }
 
-
-        h3 {
-            margin-left: 600px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            color: rgb(0, 0, 0);
-            animation: Kakucia 3s infinite;
-
-        }
-
-
-        H2 {
-            margin-left: 600px;
-            margin-top: 300px;
-            margin-bottom: 30px;
-            color: rgb(146, 32, 123);
-            animation: Kakucia 3s infinite;
-
+        .Counter p {
+            margin: 0;
+            padding: 10px 12px;
+            background: rgba(255, 255, 255, 0.55);
+            border-radius: 14px;
+            backdrop-filter: blur(3px);
         }
 
         .fireworks {
             z-index: 1;
             position: fixed;
-            top: 0;
-            left: 0;
-
-
+            inset: 0;
+            pointer-events: none;
         }
-
-
         .hefi {
-            border-radius: 5%;
-            font-size: 150px;
-            display: flex;
-            justify-items: center;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            padding: 0% 0% 0% 30%;
-            color: rgb(36, 8, 61);
-            animation: Kaku 5s infinite;
             z-index: 9999;
-            position: absolute;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
+            width: min(950px, 92vw);
+            padding: 18px 14px;
+
+            font-size: 28px;
+            color: rgb(36, 8, 61);
+            text-align: center;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(4px);
+
+            animation: Kaku 5s infinite;
         }
-
 
         @keyframes Kaku {
             0% {
-                transform: translateY(0);
+                transform: translate(-50%, -50%) translateY(0);
             }
 
             50% {
-                transform: translateY(-20px);
+                transform: translate(-50%, -50%) translateY(-12px);
             }
 
             100% {
-                transform: translateY(0);
+                transform: translate(-50%, -50%) translateY(0);
             }
-
         }
 
         @keyframes Kakucia {
@@ -100,15 +116,29 @@
             }
 
             50% {
-                transform: translateY(-30px);
+                transform: translateY(-18px);
             }
 
             100% {
                 transform: translateY(0);
             }
+        }
 
+        @media (max-width: 380px) {
+            body {
+                padding: 18px 10px;
+            }
+
+            .Counter {
+                gap: 10px;
+            }
+
+            .Counter p {
+                padding: 8px 10px;
+            }
         }
     </style>
+
 
     <h2>გილოცავთ დამდეგს!</h2>
     <H3>ახალ წლამდე დარჩა:</H3>
