@@ -8,7 +8,7 @@ setInterval(() => {
     let hours = String(Math.floor((birthday - now) / 1000 / 3600 % 24))
     let minutes = String(Math.floor((birthday - now) / 1000 / 60 % 60))
     let seconds = String(Math.floor((birthday - now) / 1000 % 60))
-    let boxes = document.querySelectorAll('.kaku')
+    let boxes = document.querySelectorAll('.New')
 
     boxes[0].innerHTML = days.padStart(2, 0)
     boxes[1].innerHTML = hours.padStart(2, 0)
