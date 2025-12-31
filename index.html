@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <style>
+        body {
+
+            background-color: antiquewhite;
+            background-size: cover;
+            background: url(https://images.template.net/114125/free-aesthetic-christmas-background-edit-online.jpg);
+        }
+
+        .Counter {
+            display: flex;
+            flex-direction: row;
+            gap: 10%;
+            justify-content: center;
+            align-content: center;
+            margin-left: 0px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+            color: rgb(31, 27, 34);
+            font-size: xx-large;
+        }
+
+
+        h3 {
+            margin-left: 600px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: rgb(0, 0, 0);
+            animation: Kakucia 3s infinite;
+
+        }
+
+
+        H2 {
+            margin-left: 600px;
+            margin-top: 300px;
+            margin-bottom: 30px;
+            color: rgb(146, 32, 123);
+            animation: Kakucia 3s infinite;
+
+        }
+
+        .fireworks {
+            z-index: 1;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+
+        }
+
+
+        .hefi {
+            border-radius: 5%;
+            font-size: 150px;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 0% 0% 0% 30%;
+            color: rgb(36, 8, 61);
+            animation: Kaku 5s infinite;
+            z-index: 9999;
+            position: absolute;
+
+        }
+
+
+        @keyframes Kaku {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+        @keyframes Kakucia {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-30px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+    </style>
+
+    <h2>გილოცავთ დამდეგს!</h2>
+    <H3>ახალ წლამდე დარჩა:</H3>
+
+    <canvas id="fireworks" class="fireworks"></canvas>
+    <div class="Counter">
+        <p>დღე: <span class="kaku"></span></p>
+        <p>საათი: <span class="kaku"></span></p>
+        <p>წუთი: <span class="kaku"></span></p>
+        <p>წამი: <span class="kaku"></span> </p>
+
+    </div>
+
+
+    <div id="Happy" style="display: none;" class="hefi"> გილოცავთ ახალ წელს! </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
