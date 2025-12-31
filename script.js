@@ -17,7 +17,7 @@ setInterval(() => {
 
 }, 1000);
 
-let now = new Date(2026, 0, 1);
+let now = new Date();
 
 const panel = document.getElementById('Happy')
 
